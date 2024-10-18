@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 2;
+}
+.navbar {
+  background-color: #115db436;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #f4f4f4;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  color: white;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: #525252db;
+  text-align: center;
+  padding: 10px;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: rgb(143, 166, 27);
+}
+/* Banner javítása és középre igazítása */
+.banner {
+  position: relative;
+  height: 500px;
+  background-image: url("img/banner.jpg"); /* A képed URL-je */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(29, 40, 182);
+  text-align: center;
+}
+
+/* Banner szöveg stílusozása */
+.banner-text {
+  text-align: center;
+  background-color: rgba(49, 16, 183, 0); /* Átlátszó fekete háttér */
+  padding: 20px;
+  border-radius: 0px;
+}
+
+.banner-text h1 {
+  padding-left: 25px;
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #ff6347; /* Ez lehet fekete is, ha más kontrasztot szeretnél */
+}
+
+.banner-text p {
+  font-size: 24px;
+  color: #ff6347;
+}
+
+/* Görgethető rész */
+.scrollable-section {
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 50px 0;
+}
+
+.banner img {
+  width: 40%;
+  height: auto;
+}
+
+.services {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.service-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service {
+  background-color: #e7e7e7;
+  padding: 20px;
+  width: 25%;
+  border-radius: 0px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+
+------------------------------------------- Portfólió Aloldal formázása ----------------------------------
+
+/* Portfólió stílus */
+.portfolio {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.portfolio p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.portfolio-item p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item:hover {
+  transform: scale(1.25); /* Képek kicsit megnőnek hoverre */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Árnyék hoverre */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px; /* Növeld meg a távolságot a képek között */
+  max-width: 1200px;
+  margin: 40px auto; /* Extra margó, hogy ne érjen túl közel az oldal széléhez */
+}
+
+.portfolio {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.portfolio h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.portfolio p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #666;
+  text-align: center;
+}
